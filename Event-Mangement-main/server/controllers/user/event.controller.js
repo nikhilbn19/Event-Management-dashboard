@@ -11,7 +11,7 @@ export const addEvent = async (req, res) => {
       .json({ message: "You are not authorized to add event" });
   }
 
-  const { title, description, date, time, venue, price, category } = req.body;
+  const { title, description, date, time, venue,  category } = req.body;
   const image = req.file;
 
   if (
@@ -21,12 +21,12 @@ export const addEvent = async (req, res) => {
     !time ||
     !venue ||
     !image ||
-    !price ||
     !category
   ) {
     return res.status(400).json({ message: "Please fill all the fields" });
   }
 
+  let obj1;
   
   try {
     const user = await User.findById(id);
@@ -49,10 +49,9 @@ export const addEvent = async (req, res) => {
       time,
       venue,
       image: imageUrl.secure_url,
-      price,
       category,
     });
-
+    obj1=newEvent;
     await newEvent.save();
     return res.status(201).json({
       message: "Event added successfully",
@@ -60,6 +59,7 @@ export const addEvent = async (req, res) => {
     });
   } catch (error) {
     console.error("Error in adding event", error);
+    console.log(obj1);
     return res.status(500).json({ message: "Error in adding event" });
   }
 };
@@ -92,7 +92,7 @@ export const getEventOfUser = async (req, res) => {
 export const updateEventById = async (req, res) => {
   const { id } = req.user;
   const { eventId } = req.params;
-  const { title, description, date, time, venue, price, category } = req.body;
+  const { title, description, date, time, venue,  category } = req.body;
   try {
     const event = await Event.findById({ _id: eventId, user: id });
     if (!event) {
@@ -106,7 +106,6 @@ export const updateEventById = async (req, res) => {
         date: new Date(date),
         time,
         venue,
-        price,
         category,
       },
       { new: true }

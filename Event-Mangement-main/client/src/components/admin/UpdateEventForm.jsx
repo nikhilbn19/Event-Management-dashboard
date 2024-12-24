@@ -26,7 +26,6 @@ const UpdateEventForm = () => {
     if (data) {
       setValue("title", data.title);
       setValue("description", data.description);
-      setValue("price", data.price);
       setValue("date", data.date?.split("T")[0]);
       setValue("time", data.time);
       setValue("venue", data.venue);
@@ -94,30 +93,7 @@ const UpdateEventForm = () => {
         />
       </div>
 
-      <div className="form-control">
-        <label className="label" htmlFor="price">
-          <span className="label-text">Price</span>
-        </label>
-        <Controller
-          name="price"
-          control={control}
-          rules={{ required: "Price is required" }}
-          render={({ field, fieldState: { error } }) => (
-            <>
-              <input
-                {...field}
-                type="number"
-                step="0.01"
-                placeholder="Price"
-                className="input input-bordered"
-              />
-              {error && (
-                <span className="text-error text-sm">{error.message}</span>
-              )}
-            </>
-          )}
-        />
-      </div>
+      
 
       <div className="form-control">
         <label className="label" htmlFor="date">

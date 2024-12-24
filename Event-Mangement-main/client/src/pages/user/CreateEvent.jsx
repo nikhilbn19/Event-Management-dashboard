@@ -99,21 +99,6 @@ const CreateEvent = () => {
 
           <div className="form-control">
             <label className="label">
-              <span className="label-text">Price</span>
-            </label>
-            <input
-              type="number"
-              step="0.01"
-              {...register("price")}
-              className="input input-bordered w-full"
-            />
-            {errors.price && (
-              <span className="text-error text-sm">{errors.price.message}</span>
-            )}
-          </div>
-
-          <div className="form-control">
-            <label className="label">
               <span className="label-text">Category</span>
             </label>
             <select

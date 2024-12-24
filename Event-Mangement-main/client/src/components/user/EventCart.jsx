@@ -35,9 +35,6 @@ function handleUpdate(id) {
           <p>
             <strong>Location:</strong> {event.venue}
           </p>
-          <p>
-            <strong>Price:</strong> ${event.price}
-          </p>
         </div>
 
         {isLoggedIn && role === "user" && (

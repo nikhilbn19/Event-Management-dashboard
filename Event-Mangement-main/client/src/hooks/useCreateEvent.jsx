@@ -15,10 +15,10 @@ const schema = yup.object().shape({
     return value && value.length > 0;
   }),
 
-  price: yup
-    .number()
-    .positive("Price must be positive")
-    .required("Price is required"),
+  // price: yup
+  //   .number()
+  //   .positive("Price must be positive"),
+  //   // .required("Price is required"),
   category: yup
     .string()
     .oneOf(["Conference", "Workshop", "Social", "Other"])
