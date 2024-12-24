@@ -1,6 +1,6 @@
 # EventSphere
 
-[![GitHub repo](https://img.shields.io/badge/github-RijoKsd/Event--Management-blue?style=flat-square&logo=github)](https://github.com/RijoKsd/Event-Mangement)
+
 
 EventSphere is a comprehensive event management platform built with modern web technologies. It allows users to create, delete, and view events, while providing administrators with user management capabilities.
 
