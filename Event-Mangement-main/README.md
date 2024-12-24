@@ -4,7 +4,6 @@
 
 EventSphere is a comprehensive event management platform built with modern web technologies. It allows users to create, delete, and view events, while providing administrators with user management capabilities.
 
-![EventSphere Dashboard](https://github.com/RijoKsd/Event-Mangement/blob/main/images/home.png)
 
 ## Features
 
@@ -33,7 +32,7 @@ EventSphere is a comprehensive event management platform built with modern web t
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/RijoKsd/Event-Mangement.git
+   git clone https://github.com/nikhilbn19/Event-Mangement.git
    cd Event-Mangement
    ```
 
@@ -75,33 +74,25 @@ EventSphere is a comprehensive event management platform built with modern web t
 ### User Features
 
 1. **Sign Up / Log In**: Create a new account or log in to an existing one.
-   ![User Authentication](https://github.com/RijoKsd/Event-Mangement/blob/main/images/login.png)
+  
 
 2. **Create Event**: Fill in event details and upload an image.
-   ![Create Event](https://github.com/RijoKsd/Event-Mangement/blob/main/images/create-event.png)
+   
 
 3. **All Events**: Browse through your events and events created by others.
-   ![Event List](https://github.com/RijoKsd/Event-Mangement/blob/main/images/events.png)
+  
 
 4. **My Event**:  Logged user Events.
-   ![My Event](https://github.com/RijoKsd/Event-Mangement/blob/main/images/my-events.png)
+ 
 
 ### Admin Features
 
 1. **User Management**: View all users, suspend, remove, or activate user accounts.
-   ![Admin Dashboard](https://github.com/RijoKsd/Event-Mangement/blob/main/images/user-management.png)
+   
 
 2. **Analytics**: View graphs and statistics about events and users.
-   ![Admin Analytics](https://github.com/RijoKsd/Event-Mangement/blob/main/images/dashboard.png)
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+   
 
 
 
-## Contact
 
-Rijo Sebastian - [GitHub](https://github.com/RijoKsd)
-
-Project Link: [https://github.com/RijoKsd/Event-Mangement](https://github.com/RijoKsd/Event-Mangement)
